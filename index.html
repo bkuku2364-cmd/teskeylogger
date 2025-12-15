@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemeriksa Keamanan GTA SAMP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            border: 1px solid #3498db;
+        }
+        
+        h1 {
+            color: #3498db;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1em;
+        }
+        
+        .warning-box {
+            background: rgba(231, 76, 60, 0.2);
+            border: 2px solid #e74c3c;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .warning-box h2 {
+            color: #e74c3c;
+            margin-bottom: 10px;
+        }
+        
+        .checklist {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .check-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .check-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .check-icon {
+            width: 30px;
+            height: 30px;
+            background: #2ecc71;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        
+        .tips {
+            background: rgba(52, 152, 219, 0.2);
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .tips h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 5px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .btn-danger {
+            background: #e74c3c;
+        }
+        
+        .btn-danger:hover {
+            background: #c0392b;
+        }
+        
+        .btn-success {
+            background: #2ecc71;
+        }
+        
+        .btn-success:hover {
+            background: #27ae60;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .tool-section {
+            background: rgba(46, 204, 113, 0.1);
+            border: 2px solid #2ecc71;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .tool-section h2 {
+            color: #2ecc71;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛡️ Pemeriksa Keamanan GTA SAMP</h1>
+            <p class="subtitle">Tools untuk melindungi akun dan komputer Anda dari malware</p>
+        </header>
+        
+        <div class="warning-box">
+            <h2>⚠️ PERINGATAN PENTING</h2>
+            <p>Keylogger dan malware lainnya sering menyamar sebagai:</p>
+            <ul>
+                <li>Mod GTA SAMP gratis</li>
+                <li>Cheat atau hack untuk game</li>
+                <li>Tools administrasi palsu</li>
+                <li>Client SAMP modifikasi</li>
+            </ul>
+        </div>
+        
+        <div class="checklist">
+            <h2>🔍 Tanda-tanda Komputer Terinfeksi:</h2>
+            <div class="check-item">
+                <div class="check-icon">1</div>
+                <div>
+                    <strong>Keyboard lambat merespon</strong>
+                    <p>Ada jeda antara pengetikan dan tampilan di layar</p>
+                </div>
+            </div>
+            
+            <div class="check-item">
+                <div class="check-icon">2</div>
+                <div>
+                    <strong>Komputer tiba-tiba lambat</strong>
+                    <p>Terutama saat membuka game atau aplikasi penting</p>
+                </div>
+            </div>
+            
+            <div class="check-item">
+                <div class="check-icon">3</div>
+                <div>
+                    <strong>File aneh muncul</strong>
+                    <p>File .log, .txt, atau .dll yang tidak dikenal di sistem</p>
+                </div>
+            </div>
+            
+            <div class="check-item">
+                <div class="check-icon">4</div>
+                <div>
+                    <strong>Akun game tiba-tiba hilang</strong>
+                    <p>Password berubah tanpa izin Anda</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tips">
+            <h2>🛡️ Cara Melindungi Diri:</h2>
+            <ul>
+                <li><strong>Gunakan antivirus terpercaya</strong> - Aktifkan real-time protection</li>
+                <li><strong>Download mod hanya dari sumber resmi</strong> - Forum komunitas terverifikasi</li>
+                <li><strong>Hindari cheat dan hack</strong> - Sering mengandung malware</li>
+                <li><strong>Update sistem operasi dan antivirus</strong> - Patch keamanan penting</li>
+                <li><strong>Gunakan 2FA jika tersedia</strong> - Tambahan keamanan akun</li>
+                <li><strong>Backup data penting</strong> - Simpan di cloud atau drive eksternal</li>
+            </ul>
+        </div>
+        
+        <div class="tool-section">
+            <h2>🧰 Tools Keamanan Gratis yang Direkomendasikan:</h2>
+            <p>Gunakan tools berikut untuk memindai komputer Anda:</p>
+            
+            <button class="btn" onclick="showTip('Malwarebytes')">Malwarebytes</button>
+            <button class="btn" onclick="showTip('AdwCleaner')">AdwCleaner</button>
+            <button class="btn" onclick="showTip('HitmanPro')">HitmanPro</button>
+            <button class="btn" onclick="showTip('WindowsDefender')">Windows Defender</button>
+            
+            <div id="tool-info" style="margin-top: 20px; padding: 15px; background: rgba(0,0,0,0.3); border-radius: 8px; display: none;">
+                <h3 id="tool-name"></h3>
+                <p id="tool-desc"></p>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <h2>🎮 Tips Khusus GTA SAMP:</h2>
+            <p>1. Gunakan hanya SAMP client resmi dari <a href="https://www.sa-mp.com" style="color: #3498db;">sa-mp.com</a></p>
+            <p>2. Bergabunglah hanya dengan server terpercaya</p>
+            <p>3. Laporkan cheat atau hack ke admin server</p>
+            <p>4. Jangan bagikan akun dengan siapapun</p>
+        </div>
+        
+        <div style="text-align: center;">
+            <button class="btn btn-success" onclick="showEmergency()">🚨 Prosedur Darurat jika Terinfeksi</button>
+            <a href="https://www.cisa.gov/stopransomware" class="btn btn-danger" target="_blank">🆘 Sumber Bantuan Keamanan</a>
+        </div>
+        
+        <footer>
+            <p>⚠️ Website ini hanya untuk edukasi keamanan komputer</p>
+            <p>🛡️ Jangan pernah download atau install keylogger - itu ILEGAL dan BERBAHAYA</p>
+            <p>© 2024 GTA SAMP Security Check | Untuk komunitas yang lebih aman</p>
+        </footer>
+    </div>
+
+    <script>
+        function showTip(tool) {
+            const toolInfo = document.getElementById('tool-info');
+            const toolName = document.getElementById('tool-name');
+            const toolDesc = document.getElementById('tool-desc');
+            
+            const tools = {
+                'Malwarebytes': {
+                    name: 'Malwarebytes',
+                    desc: 'Anti-malware yang sangat efektif untuk mendeteksi dan menghapus keylogger, spyware, dan ransomware. Versi gratis tersedia untuk scan manual.'
+                },
+                'AdwCleaner': {
+                    name: 'AdwCleaner',
+                    desc: 'Tool khusus untuk menghapus adware, PUP (Potentially Unwanted Programs), dan toolbar browser yang tidak diinginkan.'
+                },
+                'HitmanPro': {
+                    name: 'HitmanPro',
+                    desc: 'Scanner malware cloud-based yang dapat mendeteksi ancaman yang disembunyikan oleh rootkit. Versi trial tersedia.'
+                },
+                'WindowsDefender': {
+                    name: 'Windows Security (Defender)',
+                    desc: 'Antivirus bawaan Windows 10/11 yang sekarang sangat kompetitif. Pastikan real-time protection aktif dan definisi virus terupdate.'
+                }
+            };
+            
+            toolName.textContent = tools[tool].name;
+            toolDesc.textContent = tools[tool].desc;
+            toolInfo.style.display = 'block';
+        }
+        
+        function showEmergency() {
+            alert('🚨 PROSEDUR DARURAT jika terinfeksi malware:\n\n1. PUTUSKAN INTERNET - Cabut kabel LAN/Nonaktifkan WiFi\n2. BOOT SAFE MODE - Restart tekan F8 (Windows 7) atau Shift+Restart (Windows 10/11)\n3. SCAN DENGAN ANTIVIRUS - Gunakan Malwarebytes atau Windows Defender Offline\n4. GANTI SEMUA PASSWORD - Dari komputer bersih/HP\n5. MONITOR AKUN BANK - Laporkan aktivitas mencurigakan\n6. FORMAT JIKA PARAH - Backup data penting, clean install OS');
+        }
+        
+        // Disclaimer saat halaman dimuat
+        window.onload = function() {
+            console.log('%c⚠️ PERINGATAN: Jangan pernah copy-paste kode yang tidak dikenal!', 'color: red; font-size: 16px; font-weight: bold;');
+            console.log('%cWebsite ini hanya untuk edukasi keamanan komputer.', 'color: blue; font-size: 14px;');
+        }
+    </script>
+</body>
+</html>
